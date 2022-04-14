@@ -234,13 +234,10 @@ template {
 
 html,
 body {
+  position: relative;
   font-family: "Poppins", sans-serif;
   height: 100%;
-  background: #e1eec3;
-  background: #e1eec3;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f05053), to(#e1eec3));
-  background: -o-linear-gradient(top, #f05053, #e1eec3);
-  background: linear-gradient(to bottom, #f05053, #e1eec3);
+  background-color: #f05053;
 }
 
 .container {
@@ -248,14 +245,13 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-
 .products__title {
   font-weight: 700;
   font-size: 80px;
   line-height: 120px;
   color: #FFFFFF;
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
   -webkit-animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -283,6 +279,9 @@ body {
     opacity: 1;
   }
 }
+.products {
+  padding-bottom: 30px;
+}
 .products__inner {
   max-width: 887px;
   padding: 21px 24px;
@@ -298,7 +297,6 @@ body {
 .products__alert {
   margin-bottom: 10px;
   text-align: center;
-  display: none;
 }
 .products__danger {
   background-color: #dc3545;
@@ -444,17 +442,16 @@ body {
           justify-content: center;
 }
 .products__copyright {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+  margin-bottom: 30px;
+  color: #ffffff;
 }
 .products__copyright span {
-  color: #2dcb50;
+  color: #ffffff;
+  margin-left: 10px;
 }
 
 .active {
